@@ -16,8 +16,7 @@ import re
 import os
 
 
-# initial endpoints and params 
-base_sec_cgi = r'https://www.sec.gov/cgi-bin'
+# endpoints and params 
 base_sec = r'https://www.sec.gov/cgi-bin'
 
 # get_cik()
@@ -45,7 +44,7 @@ def get_cik(company_name):
     cik_results = get_atags(get_tables(cik_endpoint, params = params_cik))
 
     cik = cik_results[0]
-    link = base_sec_cgi + '/'+ cik_results[1] if cik_results[1] != 'none' else 'none'
+    link = base_sec + '/'+ cik_results[1] if cik_results[1] != 'none' else 'none'
 
     return cik, link
 
@@ -155,8 +154,8 @@ def get_edgar_tables(cik):
     # f string cik num from parameters
     params_edgar = {'action':'getcompany',
                     'CIK':f'{cik}',
-                    'type':'',
-                    'dateb':'20140101',
+                    'type':'10-K',
+                    'dateb':'',
                     'owner':'exclude',
                     'start':'',
                     'output':'',
