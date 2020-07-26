@@ -4,12 +4,13 @@
 
 1. [Purpose](#motivation)
 2. [File Descriptions](#files)
+3. [Installation](#installation)
 
 ## Project Purpose<a name="motivation"></a>
 
-The purpose of this repository is to scrape the SEC Edgar filings for a given list of company names.
+The purpose of this repository is to scrape tabular data from SEC filings.
 
-The names are first searched within the CIK code database, then the CIK code is used as primary key to navigate within the SEC Edgar site.
+Given a one or more company names and SEC filing criteria, the program will build a BeautifulSoup object from .html filing and collect, sort, and clean tables for dataframe use and .csv / .xlsx export.
 
 
 ## File Descriptions <a name="files"></a>
@@ -17,4 +18,10 @@ The names are first searched within the CIK code database, then the CIK code is 
 .py files: files containing functions for import within the sec_scraper.ipynb file
 
 .ipynb: Jupyter Notebook for running the program
+
+
+## Installation <a name="installation"></a>
+
+* BeautifulSoup
+* Standard Anaconda distribution
 
