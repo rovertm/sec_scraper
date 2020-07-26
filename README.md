@@ -4,6 +4,7 @@
 
 1. [Purpose](#motivation)
 2. [File Descriptions](#files)
+3. [Installation](#installation)
 
 ## Project Purpose<a name="motivation"></a>
 
@@ -17,4 +18,10 @@ Given a one or more company names and SEC filing criteria, the program will buil
 .py files: files containing functions for import within the sec_scraper.ipynb file
 
 .ipynb: Jupyter Notebook for running the program
+
+
+## Installation <a name="installation"></a>
+
+* BeautifulSoup
+* Standard Anaconda distribution
 
