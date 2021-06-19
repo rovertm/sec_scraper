@@ -5,6 +5,7 @@
 1. [Purpose](#motivation)
 2. [File Descriptions](#files)
 3. [Installation](#installation)
+4. [View the Notebook](#notebook)
 
 ## Project Purpose<a name="motivation"></a>
 
