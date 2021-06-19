@@ -25,3 +25,8 @@ Given a one or more company names and SEC filing criteria, the program will buil
 * BeautifulSoup
 * Standard Anaconda distribution
 
+## View the Notebook <a name="notebook"></a>
+
+View the notebook on Jupyter's NBviewer site. [Click here.](https://nbviewer.jupyter.org/github/rovertm/sec_scraper/blob/master/sec_scraper_notebook.ipynb)
+
+
